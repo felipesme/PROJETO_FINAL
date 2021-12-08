@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QMainWindow" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>speak now - menu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../REPERTÓRIO/icon.png</normaloff>../REPERTÓRIO/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(223, 223, 223);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="content">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>210</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>65</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>3</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 112);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>140</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>140</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>140</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+	;
+	background-image: url(:/menu_img/logo_menu.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>171</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_home">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	background-color: rgb(237, 224, 7);
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listas">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Listas</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listas_alunos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Alunos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listas_professores">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Professores</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listas_cursos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cursos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listas_usuarios">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Usuários</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>210</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cadastro</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro_alunos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>240</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Alunos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro_professores">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Professores</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro_cursos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cursos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro_usuarios">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>330</y>
+          <width>141</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Usuários</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_cadastro_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>370</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ede007 ;
+	border-radius: 10px;
+	color: rgb(237, 224, 7);
+}
+
+QPushButton:hover {
+	background-color: rgb(237, 224, 7);
+	border-radius: 10px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>Relatórios</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="btn_deslogar">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>550</y>
+         <width>31</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame {	
+	background-image: url(:/menu_img/menu_deslogar.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>560</y>
+         <width>71</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	font: 15px Montserrat, sans-serif;
+	font-weight: normal;
+	background-color: rgb(0, 0, 112);
+	color: rgb(237, 224, 7);
+	border-radius: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Deslogar</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>811</width>
+         <height>641</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>811</width>
+         <height>641</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>811</width>
+         <height>641</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="paginas">
+        <property name="geometry">
+         <rect>
+          <x>779</x>
+          <y>10</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="pg_home"/>
+        <widget class="QWidget" name="pg_listas_alunos"/>
+        <widget class="QWidget" name="pg_listas_professores"/>
+        <widget class="QWidget" name="pg_listas_cursos"/>
+        <widget class="QWidget" name="pg_listas_usuarios"/>
+        <widget class="QWidget" name="pg_cadastro_alunos"/>
+        <widget class="QWidget" name="pg_cadastro_professores"/>
+        <widget class="QWidget" name="pg_cadastro_cursos"/>
+        <widget class="QWidget" name="pg_cadastro_usuarios"/>
+        <widget class="QWidget" name="pg_relatorios"/>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 35px Montserrat, sans-serif;
+	font-weight: normal;
+	color: rgb(0, 0, 112);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Listas &gt; Alunos</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>52</x>
+          <y>100</y>
+          <width>731</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+	font: 15px Montserrat, sans-serif;
+}</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>NOME</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>TEL.</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>EMAIL</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CURSO</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SEMESTRE</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>MAT.</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>AÇÃO</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../REPERTÓRIO/file_login.qrc"/>
+  <include location="../REPERTÓRIO/file_menu.qrc"/>
+ </resources>
+ <connections/>
+</ui>
