@@ -681,7 +681,7 @@ QPushButton:pressed {
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>6</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="pg_home">
        <widget class="QLabel" name="label">
@@ -855,7 +855,78 @@ QPushButton:pressed {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="pg_listas_nteressados"/>
+      <widget class="QWidget" name="pg_listas_interessados">
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>listas &gt; interessados</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>60</y>
+          <width>250</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Pesquisar Interessados</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>571</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>NOME</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>TELEFONE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>DISC.</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>EMAIL</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>AÇÃO</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
       <widget class="QWidget" name="pg_listas_funcionarios"/>
       <widget class="QWidget" name="pg_cadastro_alunos">
        <widget class="QLabel" name="label_5">
@@ -971,9 +1042,6 @@ QPushButton:pressed {
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="../../../Projetos/ProjetoEscolaDeIdiomas/REPERTÓRIO/file_login.qrc"/>
-  <include location="../../../Projetos/ProjetoEscolaDeIdiomas/REPERTÓRIO/file_menu.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
