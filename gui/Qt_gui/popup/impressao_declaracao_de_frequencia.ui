@@ -35,7 +35,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Ficha de matrícula</string>
+   <string>Declaração de matrícula</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -52,13 +52,13 @@
      <height>402</height>
     </size>
    </property>
-   <property name="sizeIncrement">
+   <property name="maximumSize">
     <size>
      <width>510</width>
      <height>402</height>
     </size>
    </property>
-   <property name="baseSize">
+   <property name="sizeIncrement">
     <size>
      <width>510</width>
      <height>402</height>
@@ -109,7 +109,7 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>160</x>
       <y>360</y>
       <width>91</width>
       <height>24</height>
@@ -144,7 +144,7 @@ QPushButton:pressed {
       <x>20</x>
       <y>50</y>
       <width>471</width>
-      <height>271</height>
+      <height>281</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -159,13 +159,77 @@ QPushButton:pressed {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 112);
+}</string>
+     </property>
+     <property name="text">
+      <string>DECLARAÇÃO DE FREQUÊNCIA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
-       <width>81</width>
-       <height>16</height>
+       <y>40</y>
+       <width>444</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>444</width>
+       <height>180</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>444</width>
+       <height>180</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>444</width>
+       <height>180</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>444</width>
+       <height>180</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: normal;
+	color: rgb(0, 0, 112);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Atesto, a pedido da parte interessada e para fins, que&lt;/p&gt;&lt;p&gt;______, inscrito(a) no CPF sob o nº _______, frequenta&lt;/p&gt;&lt;p&gt;o curso de _______ promovido pela instituição You Speak&lt;/p&gt;&lt;p&gt; no período de ______ de ______ no período ______.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>250</y>
+       <width>281</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -176,89 +240,9 @@ QPushButton:pressed {
 }</string>
      </property>
      <property name="text">
-      <string>Semestre:</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Paulista, _____ de __________ de 2021.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>51</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-     </property>
-     <property name="text">
-      <string>Curso:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>81</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-     </property>
-     <property name="text">
-      <string>Matrícula:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>131</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-     </property>
-     <property name="text">
-      <string>Nome do aluno:</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>20</y>
-      <width>151</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-    </property>
-    <property name="text">
-     <string>Ficha de matrícula</string>
-    </property>
    </widget>
   </widget>
  </widget>
