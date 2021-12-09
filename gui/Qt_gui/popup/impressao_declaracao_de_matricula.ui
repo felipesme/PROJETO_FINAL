@@ -35,7 +35,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Ficha de matrícula</string>
+   <string>Declaração de matrícula</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -52,13 +52,13 @@
      <height>402</height>
     </size>
    </property>
-   <property name="sizeIncrement">
+   <property name="maximumSize">
     <size>
      <width>510</width>
      <height>402</height>
     </size>
    </property>
-   <property name="baseSize">
+   <property name="sizeIncrement">
     <size>
      <width>510</width>
      <height>402</height>
@@ -109,7 +109,7 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>160</x>
       <y>360</y>
       <width>91</width>
       <height>24</height>
@@ -144,7 +144,7 @@ QPushButton:pressed {
       <x>20</x>
       <y>50</y>
       <width>471</width>
-      <height>271</height>
+      <height>281</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -159,34 +159,58 @@ QPushButton:pressed {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>81</width>
-       <height>16</height>
+       <x>110</x>
+       <y>20</y>
+       <width>241</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel {
 	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	color: rgb(0, 0, 112);
 }</string>
      </property>
      <property name="text">
-      <string>Semestre:</string>
+      <string>DECLARAÇÃO DE MATRÍCULA</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>70</y>
-       <width>51</width>
-       <height>16</height>
+       <width>431</width>
+       <height>121</height>
       </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>431</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>431</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>431</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>431</width>
+       <height>121</height>
+      </size>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel {
@@ -196,16 +220,16 @@ QPushButton:pressed {
 }</string>
      </property>
      <property name="text">
-      <string>Curso:</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Declaramos para os devidos fins que o(a) aluno(a) ______, &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;matrícula ______ encontra-se regularmente matriculado&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;na escola de idiomas You Speak no turno ______ com&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;carga horária de ______.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>81</width>
-       <height>16</height>
+       <x>90</x>
+       <y>250</y>
+       <width>281</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -216,49 +240,9 @@ QPushButton:pressed {
 }</string>
      </property>
      <property name="text">
-      <string>Matrícula:</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Paulista, _____ de __________ de 2021.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>131</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-     </property>
-     <property name="text">
-      <string>Nome do aluno:</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>20</y>
-      <width>151</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: normal;
-	color: rgb(0, 0, 112);
-}</string>
-    </property>
-    <property name="text">
-     <string>Ficha de matrícula</string>
-    </property>
    </widget>
   </widget>
  </widget>
