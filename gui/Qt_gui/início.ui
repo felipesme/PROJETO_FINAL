@@ -701,7 +701,7 @@ QPushButton:pressed {
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>5</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="pg_home">
        <widget class="QLabel" name="label">
@@ -947,6 +947,27 @@ QPushButton:pressed {
          <string>Listas/ impressão</string>
         </property>
        </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>351</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 25px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 127);
+	background-color: rgb(255, 255, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:19pt;&quot;&gt;Pop-ups de impressão&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="pg_listas_interessados">
        <widget class="QTableWidget" name="tableWidget_3">
@@ -1086,7 +1107,7 @@ QPushButton:pressed {
 }</string>
         </property>
         <property name="text">
-         <string>Listas/ interessados</string>
+         <string>Listas/ funcionários</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_15">
@@ -1094,7 +1115,7 @@ QPushButton:pressed {
          <rect>
           <x>30</x>
           <y>60</y>
-          <width>401</width>
+          <width>341</width>
           <height>31</height>
          </rect>
         </property>
@@ -1107,7 +1128,7 @@ QPushButton:pressed {
 }</string>
         </property>
         <property name="text">
-         <string>Informações de interessados</string>
+         <string>Informações funcionários</string>
         </property>
        </widget>
       </widget>

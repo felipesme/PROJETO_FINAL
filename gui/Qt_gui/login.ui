@@ -383,7 +383,7 @@ QPushButton:pressed {
           </property>
           <property name="styleSheet">
            <string notr="true">QFrame {
-	background-image: url(:/login_img/logo_login.png);
+	background-image: url(:/img_login/logo_login.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }</string>
@@ -472,7 +472,7 @@ QPushButton:pressed {
   </widget>
  </widget>
  <resources>
-  <include location="../REPERTÓRIO/file_login.qrc"/>
+  <include location="../../REPERTÓRIO/logo.qrc"/>
  </resources>
  <connections/>
 </ui>
