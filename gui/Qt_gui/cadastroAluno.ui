@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
+    <width>800</width>
     <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1024</width>
+    <width>800</width>
     <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1024</width>
+    <width>800</width>
     <height>600</height>
    </size>
   </property>
@@ -32,7 +32,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../REPERTÓRIO/icon.png</normaloff>../REPERTÓRIO/icon.png</iconset>
+    <normaloff>../../../../.designer/REPERTÓRIO/icon.png</normaloff>../../../../.designer/REPERTÓRIO/icon.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(223, 223, 223);</string>
@@ -347,7 +347,7 @@ QPushButton:pressed {
 }</string>
         </property>
         <property name="text">
-         <string>Cursos</string>
+         <string>Impressão</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_listas_usuarios">
@@ -679,67 +679,192 @@ QPushButton:pressed {
      </widget>
     </item>
     <item>
-     <widget class="QFrame" name="frame_3">
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>6</number>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QFrame" name="frame_4">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>811</width>
-         <height>641</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>811</width>
-         <height>641</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>811</width>
-         <height>641</height>
-        </size>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <widget class="QStackedWidget" name="paginas">
-        <property name="geometry">
-         <rect>
-          <x>779</x>
-          <y>10</y>
-          <width>31</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <widget class="QWidget" name="pg_home"/>
-        <widget class="QWidget" name="pg_listas_alunos"/>
-        <widget class="QWidget" name="pg_listas_professores"/>
-        <widget class="QWidget" name="pg_listas_cursos"/>
-        <widget class="QWidget" name="pg_listas_usuarios"/>
-        <widget class="QWidget" name="pg_cadastro_alunos"/>
-        <widget class="QWidget" name="pg_cadastro_professores"/>
-        <widget class="QWidget" name="pg_cadastro_cursos"/>
-        <widget class="QWidget" name="pg_cadastro_usuarios"/>
-        <widget class="QWidget" name="pg_relatorios"/>
-       </widget>
+      <widget class="QWidget" name="pg_home">
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>40</x>
+          <x>20</x>
+          <y>10</y>
+          <width>341</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 30px Montserrat, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	color: rgb(0, 0, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Bem-vindo(a)!</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_listas_alunos">
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 20px Montserrat, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	color: rgb(0, 0, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Informações alunos</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>581</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>NOME</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>TELEFONE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CURSO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SEMESTRE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>AÇÃO</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_listas_professores">
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>561</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>NOME</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>TELEFONE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CURSO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>QUANT.</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>AÇÃO</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 20px Montserrat, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	color: rgb(0, 0, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Informações professores</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_listas_impressao">
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
           <y>20</y>
-          <width>321</width>
-          <height>51</height>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 20px Montserrat, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	color: rgb(0, 0, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Informações impressão</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_listas_nteressados"/>
+      <widget class="QWidget" name="pg_listas_funcionarios"/>
+      <widget class="QWidget" name="pg_cadastro_alunos">
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>291</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -748,54 +873,21 @@ QPushButton:pressed {
 	font-weight: normal;
 	color: rgb(0, 0, 112);
 }
+
 </string>
         </property>
         <property name="text">
-         <string>Cadastro &gt; Alunos</string>
+         <string>Cadastro &gt; alunos</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLineEdit" name="lineEdit_5">
         <property name="geometry">
          <rect>
-          <x>51</x>
-          <y>101</y>
-          <width>47</width>
-          <height>19</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: bold;
-	color: rgb(0, 0, 112);
-	border: 0px;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>Nome</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_2">
-        <property name="geometry">
-         <rect>
-          <x>580</x>
-          <y>125</y>
-          <width>201</width>
+          <x>30</x>
+          <y>180</y>
+          <width>241</width>
           <height>31</height>
          </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
         </property>
         <property name="styleSheet">
          <string notr="true">QLineEdit {	
@@ -805,48 +897,31 @@ QPushButton:pressed {
 </string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLineEdit" name="lineEdit_6">
         <property name="geometry">
          <rect>
-          <x>580</x>
-          <y>100</y>
-          <width>47</width>
-          <height>19</height>
+          <x>30</x>
+          <y>120</y>
+          <width>501</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: bold;
-	color: rgb(0, 0, 112);
-	border: 0px;
+         <string notr="true">QLineEdit {	
+	border: 2px solid #000070 ;
+	border-radius: 10px;
 }
 </string>
-        </property>
-        <property name="text">
-         <string>CPF</string>
         </property>
        </widget>
        <widget class="QLineEdit" name="lineEdit_3">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>200</y>
-          <width>201</width>
+          <x>30</x>
+          <y>240</y>
+          <width>501</width>
           <height>31</height>
          </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
         </property>
         <property name="styleSheet">
          <string notr="true">QLineEdit {	
@@ -856,12 +931,12 @@ QPushButton:pressed {
 </string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>175</y>
-          <width>47</width>
+          <x>40</x>
+          <y>100</y>
+          <width>141</width>
           <height>19</height>
          </rect>
         </property>
@@ -875,88 +950,15 @@ QPushButton:pressed {
 </string>
         </property>
         <property name="text">
-         <string>TEL.</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>175</y>
-          <width>47</width>
-          <height>19</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: bold;
-	color: rgb(0, 0, 112);
-	border: 0px;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>EMAIL</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_4">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>200</y>
-          <width>511</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLineEdit {	
-	border: 2px solid #000070 ;
-	border-radius: 10px;
-}
-</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>250</y>
-          <width>61</width>
-          <height>19</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel {
-	font: 15px Montserrat, sans-serif;
-	font-weight: bold;
-	color: rgb(0, 0, 112);
-	border: 0px;
-}
-</string>
-        </property>
-        <property name="text">
-         <string>CURSO</string>
+         <string>NOME COMPLETO</string>
         </property>
        </widget>
        <widget class="QComboBox" name="comboBox">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>280</y>
-          <width>471</width>
+          <x>30</x>
+          <y>310</y>
+          <width>241</width>
           <height>31</height>
          </rect>
         </property>
@@ -994,26 +996,102 @@ QPushButton:pressed {
          </property>
         </item>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_5">
+       <widget class="QLabel" name="label_9">
         <property name="geometry">
          <rect>
-          <x>540</x>
-          <y>280</y>
-          <width>241</width>
-          <height>31</height>
+          <x>40</x>
+          <y>290</y>
+          <width>61</width>
+          <height>19</height>
          </rect>
         </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 112);
+	border: 0px;
+}
+</string>
         </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
+        <property name="text">
+         <string>CURSO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>160</y>
+          <width>81</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 112);
+	border: 0px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>TELEFONE</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>51</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 112);
+	border: 0px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>EMAIL</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>160</y>
+          <width>47</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 15px Montserrat, sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 112);
+	border: 0px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>310</y>
+          <width>221</width>
+          <height>31</height>
+         </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">QLineEdit {	
@@ -1023,11 +1101,28 @@ QPushButton:pressed {
 </string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_7">
+       <widget class="QLineEdit" name="lineEdit_8">
         <property name="geometry">
          <rect>
-          <x>540</x>
-          <y>255</y>
+          <x>290</x>
+          <y>180</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {	
+	border: 2px solid #000070 ;
+	border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>290</y>
           <width>91</width>
           <height>19</height>
          </rect>
@@ -1045,33 +1140,71 @@ QPushButton:pressed {
          <string>SEMESTRE</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="geometry">
          <rect>
-          <x>51</x>
-          <y>126</y>
-          <width>511</width>
-          <height>31</height>
+          <x>294</x>
+          <y>420</y>
+          <width>111</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color:  rgb(255, 82, 85);
+	font: 9pt &quot;Segoe UI&quot;;
+	border-radius: 10px;
+	padding: 2px;
+    color: rgb(0, 0, 112);
+}
+
+QPushButton:hover {
+	background-color: rgb(187, 237, 6);
+	border-radius: 10px;
+	padding: 2px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
         </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
+        <property name="text">
+         <string>CONFIRMAR</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>420</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">QLineEdit {	
-	border: 2px solid #000070 ;
+         <string notr="true">QPushButton {
+	background-color:  rgb(131, 255, 156);
+
 	border-radius: 10px;
+	padding: 2px;
+	font: 8pt &quot;Segoe UI Historic&quot;;
+	color: rgb(0, 0, 112);
 }
-</string>
+
+QPushButton:hover {
+	background-color: rgb(187, 237, 6);
+	border-radius: 10px;
+	padding: 2px;
+	color: rgb(0, 0, 112);
+}
+
+QPushButton:pressed {
+	background-color: rgb(211, 214, 4);
+}</string>
+        </property>
+        <property name="text">
+         <string>CANCELAR</string>
         </property>
        </widget>
       </widget>
@@ -1081,8 +1214,8 @@ QPushButton:pressed {
   </widget>
  </widget>
  <resources>
-  <include location="../REPERTÓRIO/file_login.qrc"/>
-  <include location="../REPERTÓRIO/file_menu.qrc"/>
+  <include location="../../REPERTÓRIO/file_login.qrc"/>
+  <include location="../../REPERTÓRIO/file_menu.qrc"/>
  </resources>
  <connections/>
 </ui>
