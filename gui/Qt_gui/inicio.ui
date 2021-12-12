@@ -133,8 +133,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QFrame {
-	;
-	background-image: url(:/menu_img/logo_menu.png);
+	background-image: url(:/img/logo_menu.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }</string>
@@ -1247,8 +1246,7 @@ QPushButton:pressed {
   </widget>
  </widget>
  <resources>
-  <include location="../../../Projetos/ProjetoEscolaDeIdiomas/REPERTÓRIO/file_login.qrc"/>
-  <include location="../../../Projetos/ProjetoEscolaDeIdiomas/REPERTÓRIO/file_menu.qrc"/>
+  <include location="../../img/inicio.qrc"/>
  </resources>
  <connections/>
 </ui>
