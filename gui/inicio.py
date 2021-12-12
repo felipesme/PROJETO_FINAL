@@ -7,7 +7,7 @@
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
-import img as img
+
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -15,11 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QHeaderView,
-    QLabel, QLineEdit, QMainWindow, QPushButton,
-    QSizePolicy, QStackedWidget, QTableWidget, QTableWidgetItem,
-    QWidget)
-#import inicio_qrc
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QHBoxLayout,
+    QHeaderView, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QStackedWidget, QTableWidget,
+    QTableWidgetItem, QWidget)
+#import inicio_rc
 
 class Ui_menu(object):
     def setupUi(self, menu):
@@ -354,7 +354,7 @@ class Ui_menu(object):
         self.pg_home.setObjectName(u"pg_home")
         self.label = QLabel(self.pg_home)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(20, 10, 341, 81))
+        self.label.setGeometry(QRect(260, 230, 341, 81))
         self.label.setStyleSheet(u"QLabel {\n"
 "	font: 30px Montserrat, sans-serif;\n"
 "	font-weight: bold;\n"
@@ -488,7 +488,7 @@ class Ui_menu(object):
         __qtablewidgetitem18 = QTableWidgetItem()
         self.tableWidget_3.setHorizontalHeaderItem(4, __qtablewidgetitem18)
         self.tableWidget_3.setObjectName(u"tableWidget_3")
-        self.tableWidget_3.setGeometry(QRect(30, 110, 501, 451))
+        self.tableWidget_3.setGeometry(QRect(30, 110, 691, 451))
         self.label_9 = QLabel(self.pg_listas_interessados)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setGeometry(QRect(30, 12, 151, 31))
@@ -526,7 +526,7 @@ class Ui_menu(object):
         __qtablewidgetitem24 = QTableWidgetItem()
         self.tableWidget_4.setHorizontalHeaderItem(5, __qtablewidgetitem24)
         self.tableWidget_4.setObjectName(u"tableWidget_4")
-        self.tableWidget_4.setGeometry(QRect(30, 110, 601, 451))
+        self.tableWidget_4.setGeometry(QRect(30, 110, 691, 451))
         self.label_14 = QLabel(self.pg_listas_funcionarios)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(30, 12, 151, 31))
@@ -548,48 +548,221 @@ class Ui_menu(object):
         self.stackedWidget.addWidget(self.pg_listas_funcionarios)
         self.pg_cadastro_alunos = QWidget()
         self.pg_cadastro_alunos.setObjectName(u"pg_cadastro_alunos")
+        self.label_17 = QLabel(self.pg_cadastro_alunos)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(50, 290, 61, 19))
+        self.label_17.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.label_18 = QLabel(self.pg_cadastro_alunos)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(50, 160, 47, 19))
+        self.label_18.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.label_19 = QLabel(self.pg_cadastro_alunos)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(50, 220, 51, 19))
+        self.label_19.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.label_20 = QLabel(self.pg_cadastro_alunos)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(330, 290, 91, 19))
+        self.label_20.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.label_8 = QLabel(self.pg_cadastro_alunos)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(50, 100, 141, 19))
+        self.label_8.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.txt_nome = QLineEdit(self.pg_cadastro_alunos)
+        self.txt_nome.setObjectName(u"txt_nome")
+        self.txt_nome.setGeometry(QRect(40, 120, 501, 31))
+        self.txt_nome.setStyleSheet(u"QLineEdit {	\n"
+"	border: 2px solid #000070 ;\n"
+"	border-radius: 10px;\n"
+"}\n"
+"")
+        self.txt_telefone = QLineEdit(self.pg_cadastro_alunos)
+        self.txt_telefone.setObjectName(u"txt_telefone")
+        self.txt_telefone.setGeometry(QRect(300, 180, 241, 31))
+        self.txt_telefone.setStyleSheet(u"QLineEdit {	\n"
+"	border: 2px solid #000070 ;\n"
+"	border-radius: 10px;\n"
+"}\n"
+"")
+        self.btn_cancelar_aluno = QPushButton(self.pg_cadastro_alunos)
+        self.btn_cancelar_aluno.setObjectName(u"btn_cancelar_aluno")
+        self.btn_cancelar_aluno.setGeometry(QRect(304, 420, 111, 41))
+        self.btn_cancelar_aluno.setStyleSheet(u"QPushButton {\n"
+"	background-color:  rgb(255, 82, 85);\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	border-radius: 10px;\n"
+"	padding: 2px;\n"
+"    color: rgb(0, 0, 112);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(187, 237, 6);\n"
+"	border-radius: 10px;\n"
+"	padding: 2px;\n"
+"	color: rgb(0, 0, 112);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(211, 214, 4);\n"
+"}")
+        self.btn_cadastrar_aluno = QPushButton(self.pg_cadastro_alunos)
+        self.btn_cadastrar_aluno.setObjectName(u"btn_cadastrar_aluno")
+        self.btn_cadastrar_aluno.setGeometry(QRect(440, 420, 111, 41))
+        self.btn_cadastrar_aluno.setStyleSheet(u"QPushButton {\n"
+"	background-color:  rgb(131, 255, 156);\n"
+"\n"
+"	border-radius: 10px;\n"
+"	padding: 2px;\n"
+"	font: 8pt \"Segoe UI Historic\";\n"
+"	color: rgb(0, 0, 112);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(187, 237, 6);\n"
+"	border-radius: 10px;\n"
+"	padding: 2px;\n"
+"	color: rgb(0, 0, 112);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(211, 214, 4);\n"
+"}")
+        self.cb_curso = QComboBox(self.pg_cadastro_alunos)
+        self.cb_curso.addItem("")
+        self.cb_curso.addItem("")
+        self.cb_curso.addItem("")
+        self.cb_curso.addItem("")
+        self.cb_curso.setObjectName(u"cb_curso")
+        self.cb_curso.setGeometry(QRect(40, 310, 241, 31))
+        self.cb_curso.setStyleSheet(u"QComboBox {	\n"
+"	border: 2px solid #000070 ;\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+" QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"     border: 2px solid grey;\n"
+"     width: 3px;\n"
+"     height: 3px;\n"
+"     background: white;\n"
+" }")
+        self.txt_cpf = QLineEdit(self.pg_cadastro_alunos)
+        self.txt_cpf.setObjectName(u"txt_cpf")
+        self.txt_cpf.setGeometry(QRect(40, 180, 241, 31))
+        self.txt_cpf.setStyleSheet(u"QLineEdit {	\n"
+"	border: 2px solid #000070 ;\n"
+"	border-radius: 10px;\n"
+"}\n"
+"")
         self.label_5 = QLabel(self.pg_cadastro_alunos)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(30, 20, 291, 41))
+        self.label_5.setGeometry(QRect(40, 20, 341, 41))
         self.label_5.setStyleSheet(u"QLabel {\n"
-"	font: 20px Montserrat, sans-serif;\n"
-"	font-weight: bold;\n"
+"	font: 35px Montserrat, sans-serif;\n"
+"	font-weight: normal;\n"
+"	color: rgb(0, 0, 112);\n"
+"}\n"
+"\n"
+"")
+        self.txt_email = QLineEdit(self.pg_cadastro_alunos)
+        self.txt_email.setObjectName(u"txt_email")
+        self.txt_email.setGeometry(QRect(40, 240, 501, 31))
+        self.txt_email.setStyleSheet(u"QLineEdit {	\n"
+"	border: 2px solid #000070 ;\n"
 "	border-radius: 10px;\n"
-"	color: rgb(0, 0, 127);\n"
-"}")
-        self.lineEdit = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(30, 420, 133, 22))
-        self.lineEdit_2 = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setGeometry(QRect(30, 340, 133, 22))
-        self.lineEdit_4 = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
-        self.lineEdit_4.setGeometry(QRect(30, 240, 133, 22))
-        self.lineEdit_5 = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
-        self.lineEdit_5.setGeometry(QRect(30, 180, 133, 22))
-        self.lineEdit_6 = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
-        self.lineEdit_6.setGeometry(QRect(30, 120, 133, 22))
-        self.lineEdit_3 = QLineEdit(self.pg_cadastro_alunos)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
-        self.lineEdit_3.setGeometry(QRect(30, 290, 133, 22))
-        self.label_6 = QLabel(self.pg_cadastro_alunos)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(30, 90, 171, 16))
-        self.label_7 = QLabel(self.pg_cadastro_alunos)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(30, 160, 171, 16))
+"}\n"
+"")
+        self.label_21 = QLabel(self.pg_cadastro_alunos)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(310, 160, 81, 19))
+        self.label_21.setStyleSheet(u"QLabel {\n"
+"	font: 15px Montserrat, sans-serif;\n"
+"	font-weight: bold;\n"
+"	color: rgb(0, 0, 112);\n"
+"	border: 0px;\n"
+"}\n"
+"")
+        self.cb_semestre = QComboBox(self.pg_cadastro_alunos)
+        self.cb_semestre.addItem("")
+        self.cb_semestre.addItem("")
+        self.cb_semestre.addItem("")
+        self.cb_semestre.addItem("")
+        self.cb_semestre.setObjectName(u"cb_semestre")
+        self.cb_semestre.setGeometry(QRect(310, 310, 241, 31))
+        self.cb_semestre.setStyleSheet(u"QComboBox {	\n"
+"	border: 2px solid #000070 ;\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+" QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"     border: 2px solid grey;\n"
+"     width: 3px;\n"
+"     height: 3px;\n"
+"     background: white;\n"
+" }")
         self.stackedWidget.addWidget(self.pg_cadastro_alunos)
 
         self.horizontalLayout.addWidget(self.stackedWidget)
 
         menu.setCentralWidget(self.centralwidget)
+        QWidget.setTabOrder(self.txt_nome, self.txt_cpf)
+        QWidget.setTabOrder(self.txt_cpf, self.txt_telefone)
+        QWidget.setTabOrder(self.txt_telefone, self.txt_email)
+        QWidget.setTabOrder(self.txt_email, self.cb_curso)
+        QWidget.setTabOrder(self.cb_curso, self.cb_semestre)
+        QWidget.setTabOrder(self.cb_semestre, self.btn_cadastrar_aluno)
+        QWidget.setTabOrder(self.btn_cadastrar_aluno, self.btn_cancelar_aluno)
+        QWidget.setTabOrder(self.btn_cancelar_aluno, self.pushButton_cadastro_professores)
+        QWidget.setTabOrder(self.pushButton_cadastro_professores, self.pushButton_cadastro_cursos)
+        QWidget.setTabOrder(self.pushButton_cadastro_cursos, self.pushButton_cadastro_usuarios)
+        QWidget.setTabOrder(self.pushButton_cadastro_usuarios, self.pushButton_cadastro_2)
+        QWidget.setTabOrder(self.pushButton_cadastro_2, self.pushButton_listas_cursos_2)
+        QWidget.setTabOrder(self.pushButton_listas_cursos_2, self.pushButton)
+        QWidget.setTabOrder(self.pushButton, self.tableWidget)
+        QWidget.setTabOrder(self.tableWidget, self.tableWidget_2)
+        QWidget.setTabOrder(self.tableWidget_2, self.tableWidget_3)
+        QWidget.setTabOrder(self.tableWidget_3, self.tableWidget_4)
+        QWidget.setTabOrder(self.tableWidget_4, self.pushButton_home)
+        QWidget.setTabOrder(self.pushButton_home, self.pushButton_listas_alunos)
+        QWidget.setTabOrder(self.pushButton_listas_alunos, self.pushButton_cadastro_alunos)
+        QWidget.setTabOrder(self.pushButton_cadastro_alunos, self.pushButton_cadastro)
+        QWidget.setTabOrder(self.pushButton_cadastro, self.pushButton_listas_cursos)
+        QWidget.setTabOrder(self.pushButton_listas_cursos, self.pushButton_listas)
+        QWidget.setTabOrder(self.pushButton_listas, self.pushButton_listas_professores)
+        QWidget.setTabOrder(self.pushButton_listas_professores, self.pushButton_listas_usuarios)
 
         self.retranslateUi(menu)
 
-        self.stackedWidget.setCurrentIndex(6)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(menu)
@@ -673,8 +846,24 @@ class Ui_menu(object):
         ___qtablewidgetitem24.setText(QCoreApplication.translate("menu", u"CARGO", None));
         self.label_14.setText(QCoreApplication.translate("menu", u"Listas/ funcion\u00e1rios", None))
         self.label_15.setText(QCoreApplication.translate("menu", u"Informa\u00e7\u00f5es funcion\u00e1rios", None))
-        self.label_5.setText(QCoreApplication.translate("menu", u"Cadastro alunos", None))
-        self.label_6.setText(QCoreApplication.translate("menu", u"Nome completo", None))
-        self.label_7.setText(QCoreApplication.translate("menu", u"CPF", None))
+        self.label_17.setText(QCoreApplication.translate("menu", u"CURSO", None))
+        self.label_18.setText(QCoreApplication.translate("menu", u"CPF", None))
+        self.label_19.setText(QCoreApplication.translate("menu", u"EMAIL", None))
+        self.label_20.setText(QCoreApplication.translate("menu", u"SEMESTRE", None))
+        self.label_8.setText(QCoreApplication.translate("menu", u"NOME COMPLETO", None))
+        self.btn_cancelar_aluno.setText(QCoreApplication.translate("menu", u"CANCELAR", None))
+        self.btn_cadastrar_aluno.setText(QCoreApplication.translate("menu", u"CADASTRAR", None))
+        self.cb_curso.setItemText(0, QCoreApplication.translate("menu", u"Ingl\u00eas", None))
+        self.cb_curso.setItemText(1, QCoreApplication.translate("menu", u"Espanhol", None))
+        self.cb_curso.setItemText(2, QCoreApplication.translate("menu", u"Franc\u00eas", None))
+        self.cb_curso.setItemText(3, QCoreApplication.translate("menu", u"Alem\u00e3o", None))
+
+        self.label_5.setText(QCoreApplication.translate("menu", u"Cadastro > alunos", None))
+        self.label_21.setText(QCoreApplication.translate("menu", u"TELEFONE", None))
+        self.cb_semestre.setItemText(0, QCoreApplication.translate("menu", u"Ingl\u00eas", None))
+        self.cb_semestre.setItemText(1, QCoreApplication.translate("menu", u"Espanhol", None))
+        self.cb_semestre.setItemText(2, QCoreApplication.translate("menu", u"Franc\u00eas", None))
+        self.cb_semestre.setItemText(3, QCoreApplication.translate("menu", u"Alem\u00e3o", None))
+
     # retranslateUi
 
