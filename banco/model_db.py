@@ -15,14 +15,13 @@ class Model_db():
     def open(self, banco):
         try:
             self.con = sqlite3.connect(banco)
-            self.cursor = self.con.cursor
-
+            self.cursor = self.con.cursor()
         except sqlite3.Error as e:
             print(f"não foi pessível se conectar {e}")
 
     # Criando tabela Aluno
     def aluno_tbl_create(self):
-        cur = self.con.cursor
+        cur = self.cursor
         cur.execute("""
         CREATE TABLE IF NOT EXISTS alunos (
             id        INTEGER      PRIMARY KEY NOT NULL,
@@ -35,3 +34,6 @@ class Model_db():
             status    TEXT         NOT NULL DEFAULT Ativo
         );            
         """)
+
+db = Model_db()
+db.aluno_tbl_create()
