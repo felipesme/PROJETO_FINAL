@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import (QApplication, QWidget, QMainWindow, QPushButton)
+from PySide6.QtWidgets import (QApplication, QWidget, QMainWindow, QPushButton, QMessageBox)
 from PySide6.QtCore import QCoreApplication
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QMenuBar
@@ -27,7 +27,12 @@ class Login(QWidget, Ui_login):
             self.w.show()
             self.close()
         else:
-            print("Senha inválida")
+            msg = QMessageBox(self)
+            msg.setIcon(QMessageBox.Warning)
+            msg.setWindowTitle("Erro")
+            msg.setText("Usuário ou senha invávlidos")
+            msg.setStandardButtons(QMessageBox.Ok)
+            msg.exec()
 
 
 class InicioHome(QMainWindow, Ui_menu):
